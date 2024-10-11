@@ -148,7 +148,7 @@
 
 - **URL:** `/news`
 - **Method:** `GET`
-- **Description:** Fetch news articles based on a query.
+- **Description:** Fetch news articles.
     - **Headers:**
       ```json
       { "Authorization": "Bearer <jwt>" }
@@ -294,9 +294,9 @@
     ```
 
 
-## Simulating the App
+## Simulate a real-time news aggregator
 
-To simulate fetching news every 10 seconds, set the `SIMULATE_LIVE_FEED` environment variable to `true` in the `.env` file:
+To Simulate a real-time news aggregator by fetching news every 10 seconds in the background and update cache, set the `SIMULATE_LIVE_FEED` environment variable to `true` in the `.env` file:
 
 ```dotenv
 SIMULATE_LIVE_FEED=true
